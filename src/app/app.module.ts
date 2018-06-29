@@ -18,6 +18,7 @@ import { RegisterComponent } from './login/register.component';
 
 // Servicios
 import { ServiceModule } from './services/service.module';
+// import { MedicoComponent } from './pages/medicos/medico.component';
 
 
 
@@ -26,6 +27,7 @@ import { ServiceModule } from './services/service.module';
     AppComponent,
     LoginComponent,
     RegisterComponent
+    // MedicoComponent
   ],
   imports: [
     BrowserModule,
