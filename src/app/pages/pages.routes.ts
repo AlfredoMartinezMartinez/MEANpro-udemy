@@ -22,10 +22,7 @@ import { LoginGuardGuard, AdminGuard } from '../services/service.index';
 
 
 const pagesRoutes: Routes = [
-    { path: '',
-    component: PagesComponent,
-    canActivate: [ LoginGuardGuard ],
-    children: [{ path: 'dashboard', component: DashboardComponent, data: { titulo: 'Dashboard'} },
+      { path: 'dashboard', component: DashboardComponent, data: { titulo: 'Dashboard'} },
       { path: 'progress', component: ProgressComponent, data: { titulo: 'Progress'} },
       { path: 'graficas1', component: Graficas1Component, data: { titulo: 'Gráficas'} },
       { path: 'promesas', component: PromesasComponent, data: { titulo: 'Promesas'} },
@@ -45,9 +42,7 @@ const pagesRoutes: Routes = [
       { path: 'medico/:id', component: MedicoComponent, data: { titulo: 'Actualizar Médico'} },
 
       { path: '', redirectTo: '/dashboard', pathMatch: 'full' }
-   ] }
-
-];
+    ];
 
 // @NgModule({
 //     imports: [RouterModule.forChild(pagesRoutes)],
